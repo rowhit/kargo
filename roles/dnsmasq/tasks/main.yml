@@ -62,6 +62,7 @@
   shell: which resolvconf
   register: resolvconf
   ignore_errors: yes
+  changed_when: false
 
 - name: target resolv.conf file
   set_fact:
